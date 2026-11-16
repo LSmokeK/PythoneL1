@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5"><section class="resume-section"><h1>Контакти</h1><p>Можеш написати мені на електронну пошту або заповнити демонстраційну форму нижче.</p><p><strong>Email:</strong> <a href="mailto:yevhenii.verbitskyi.25@cnu.edu.ua">yevhenii.verbitskyi.25@cnu.edu.ua</a></p><p><strong>GitHub:</strong> <a href="https://github.com/LSmokeK" target="_blank" rel="noopener noreferrer">github.com/LSmokeK</a></p></section>
+<section class="resume-section"><h2>Форма зворотного зв'язку</h2><p class="small muted">Демонстраційна форма для лабораторної роботи. Повідомлення не надсилаються на пошту.</p>
+{% if submitted %}<div class="alert alert-success">Дані форми перевірено. Для реального зв'язку скористайся email вище.</div>{% endif %}
+<form method="post"><div class="mb-3"><label class="form-label" for="name">Ім'я</label><input class="form-control" id="name" name="name" required maxlength="100" placeholder="Ваше ім'я"></div><div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" id="email" type="email" name="email" required maxlength="254" placeholder="example@gmail.com"></div><div class="mb-3"><label class="form-label" for="message">Повідомлення</label><textarea class="form-control" id="message" name="message" required maxlength="2000" rows="5" placeholder="Ваше повідомлення"></textarea></div><button class="btn btn-accent" type="submit">Перевірити форму</button></form></section></div>
+{% endblock %}

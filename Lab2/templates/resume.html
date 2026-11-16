@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5">
+  <section class="hero resume-section">
+    <div class="row align-items-center g-4">
+      <div class="col-md-4 text-center"><img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Фото для резюме" class="profile-photo"></div>
+      <div class="col-md-8">
+        <p class="eyebrow">СТУДЕНТ • ВЕБРОЗРОБКА • ПРОГРАМУВАННЯ</p>
+        <h1>Євгеній Вербицький</h1>
+        <p class="lead">Вивчаю програмування та створюю власні навчальні проєкти.</p>
+        <p>Цікавлюся розробкою сайтів, Python, JavaScript і сучасними технологіями. Люблю розбиратися, як працюють програми, та застосовувати знання на практиці.</p>
+        <a class="btn btn-accent" href="{{ url_for('contacts') }}">Зв'язатися зі мною</a>
+      </div>
+    </div>
+  </section>
+  <section class="resume-section"><h2>Про мене</h2><p>Я студент, який розвиває навички у сфері інформаційних технологій. Зараз працюю над навчальними завданнями, пробую різні мови програмування та вчуся створювати повноцінні вебзастосунки.</p></section>
+  <section class="resume-section"><h2>Освіта</h2><p>Здобуваю вищу освіту та поглиблюю знання з програмування, вебтехнологій і роботи з програмними проєктами.</p></section>
+  <section class="resume-section"><h2>Що вивчаю</h2><div class="skill-tags"><span>Python</span><span>Flask</span><span>HTML / CSS</span><span>JavaScript</span><span>PHP</span><span>Git / GitHub</span><span>SQL</span></div></section>
+  <section class="resume-section"><h2>Мої навчальні проєкти</h2><div class="row g-3"><div class="col-md-6"><div class="project-card"><h3>Flask-сайт резюме</h3><p>Багатосторінковий навчальний вебдодаток на Python з HTML-шаблонами, CSS і маршрутизацією Flask.</p></div></div><div class="col-md-6"><div class="project-card"><h3>Практика веброзробки</h3><p>Навчальні завдання з HTML, CSS, JavaScript та PHP, робота з файлами проєктів і GitHub.</p></div></div></div></section>
+</div>
+{% endblock %}

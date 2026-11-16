@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="panel"><span class="eyebrow">PRODUCTS BLUEPRINT / #{{ product.id }}</span><h1>{{ product.name }}</h1><p class="price">{{ "{:,.0f}".format(product.price).replace(",", " ") }} грн</p><p>{{ product.content }}</p><a href="{{ url_for('products.products_list') }}">← До каталогу</a></section>{% endblock %}

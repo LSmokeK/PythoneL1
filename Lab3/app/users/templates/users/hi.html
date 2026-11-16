@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="panel"><span class="eyebrow">USERS BLUEPRINT</span><h1>Привіт, <span class="accent">{{ name }}</span>!</h1><p>Вік: {{ age }}</p><p class="muted">Ця сторінка демонструє параметри маршруту та GET-запиту у Flask.</p><a href="{{ url_for('home') }}">← На головну</a></section>{% endblock %}

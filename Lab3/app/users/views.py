@@ -10,7 +10,7 @@ users_bp = Blueprint(
 
 @users_bp.route("/hi/<name>")
 def greetings(name):
-    age = request.args.get("age", "не вказано")
+    age = request.args.get("age", "21")
 
     return render_template(
         "users/hi.html",

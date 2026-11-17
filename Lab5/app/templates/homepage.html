@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero container py-5">
+  <div class="eyebrow">PYTHON · FLASK · LAB 5</div>
+  <h1>Привіт! Я <span class="accent">Євгеній Вербицький.</span></h1>
+  <p class="lead">Це моя п’ята лабораторна робота: вебзастосунок на Flask із формами, перевіркою даних та каталогом товарів.</p>
+  <div class="d-flex flex-wrap gap-3 mt-4">
+    <a class="btn btn-success" href="{{ url_for('products.products_list') }}">Переглянути товари</a>
+    <a class="btn btn-outline-success" href="{{ url_for('resume') }}">Про мене</a>
+    <a class="btn btn-outline-success" href="{{ url_for('contact') }}">Написати повідомлення</a>
+  </div>
+</section>
+<section class="container pb-5"><div class="row g-3">
+<div class="col-md-4"><div class="card h-100"><div class="card-body"><h4>Каталог</h4><p>Ноутбук і мишка з описами та цінами у гривнях.</p></div></div></div>
+<div class="col-md-4"><div class="card h-100"><div class="card-body"><h4>Форми</h4><p>Додавання та редагування товарів із перевіркою введених даних.</p></div></div></div>
+<div class="col-md-4"><div class="card h-100"><div class="card-body"><h4>Flask</h4><p>Blueprints, шаблони Jinja2 та обробка запитів.</p></div></div></div>
+</div></section>
+{% endblock %}

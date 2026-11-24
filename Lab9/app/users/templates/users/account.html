@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<div class="card p-4"><h1>Профіль користувача</h1><p>Ім’я: {{ current_user.username }}</p><p>Пошта: {{ current_user.email }}</p><p>ID: {{ current_user.id }}</p><p>Ім’я в сесії: {{ session.get('username', current_user.username) }}</p><a href="{{ url_for('users.all_users') }}">Усі користувачі</a></div>{% endblock %}

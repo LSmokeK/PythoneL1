@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Головна | EV. Lab9{% endblock %}
+{% block content %}
+<section class="hero-panel p-4 p-md-5 mb-4">
+  <div class="eyebrow mb-2">PYTHON · FLASK · SQLALCHEMY</div>
+  <h1 class="display-5 fw-bold">Привіт! Я <span class="accent">Євгеній.</span></h1>
+  <p class="lead col-lg-9">Це моя восьма лабораторна робота — персональний блог на Flask. Тут я публікую дописи про ігри, технології та власні навчальні проєкти.</p>
+  <a class="btn btn-primary me-2" href="{{ url_for('posts.all_posts') }}">Переглянути пости</a>
+  <a class="btn btn-outline-primary" href="{{ url_for('main.resume') }}">Про мене</a>
+</section>
+<section class="row g-4">
+ <div class="col-md-6"><div class="card h-100"><div class="card-body p-4"><div class="eyebrow">ТЕМА ПОСТА</div><h2 class="h4">Grand Theft Auto VI</h2><p>Короткий авторський допис про атмосферу Vice City, відкритий світ і мої очікування від гри.</p><a href="{{ url_for('posts.all_posts') }}" class="btn btn-outline-primary">Читати пост</a></div></div></div>
+ <div class="col-md-6"><div class="card h-100"><div class="card-body p-4"><div class="eyebrow">ПРОЄКТ</div><h2 class="h4">Flask Blog · Lab9</h2><p>Публікації зберігаються у SQLite через SQLAlchemy. Можна створювати, редагувати та видаляти записи.</p><a href="{{ url_for('posts.create_post') }}" class="btn btn-outline-primary">Додати пост</a></div></div></div>
+</section>
+{% endblock %}
